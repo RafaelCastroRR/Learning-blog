@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Entorno
+.env
+
+# Cache
+.cache/
+dist/
+build/
+tmp/
+temp/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# OS generated files
+*.swp
