@@ -1,3 +1,4 @@
+// configs/server.js
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./mongo');
@@ -9,7 +10,10 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+// Rutas de publicaciones
 app.use('/api/posts', require('../routes/post.routes'));
+
+// Rutas de comentarios
 app.use('/api/comments', require('../routes/comment.routes'));
 
 const PORT = process.env.PORT || 5000;

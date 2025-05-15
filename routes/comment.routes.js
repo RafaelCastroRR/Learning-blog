@@ -1,8 +1,12 @@
+// routes/comment.routes.js
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/comment.controller');
+const { createComment, getComments } = require('../controllers/comment.controller');
 
-router.post('/:postId', controller.createComment);
-router.get('/:postId', controller.getCommentsByPost);
+// Crear un comentario en una publicación
+router.route('/').post(createComment);
+
+// Obtener los comentarios de una publicación específica
+router.route('/:postId').get(getComments);
 
 module.exports = router;
