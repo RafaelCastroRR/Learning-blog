@@ -1,0 +1,23 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "Backend del blog de aprendizaje - Stack MERN",
+  "main": "index.js",
+  "scripts": {
+    "start": "node configs/index.js",
+      "dev": "nodemon configs/server.js"
+
+  },
+  "keywords": ["blog", "backend", "express", "mongoose", "mern"],
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
